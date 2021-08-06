@@ -1,0 +1,19 @@
+{
+  "name": "tito-css",
+  "version": "1.0.0",
+  "description": "tito-css is a minimalist css framework to add on to Tailwind.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./css/tailwind.css -o ./dist/output.css",
+    "build:utils": "npx tailwindcss -i ./css/utils.css -o ./dist/utils.css"
+  },
+  "author": "Mark Fang",
+  "license": "MIT",
+  "files": [
+    "css/*.css"
+  ],
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  }
+}

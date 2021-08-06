@@ -1,0 +1,177 @@
+@layer components {
+
+  button {
+    @apply py-2 px-4 ;
+  }
+  
+  .util-extra-1 {
+    @apply rounded-lg shadow-md;
+  }
+
+  .util-base {
+    @apply px-4 py-2;
+  }
+  .util-base:focus {
+    @apply outline-none;
+  }
+
+
+  /* Button Types */
+
+  .is-secondary {
+    @apply border-2 bg-white border-black text-black !important;
+    /* @apply util-extra-1; */
+  }
+
+  
+  .btn {
+    @apply util-base util-extra-1;
+  }
+
+  /* Different Color Buttons */
+
+  .btn-blue {
+    @apply btn bg-blue-500 text-white font-semibold;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+
+
+  .btn-red {
+    @apply btn bg-red-500 text-white font-semibold;
+  }
+  .btn-red:hover {
+    @apply bg-red-700;
+  }
+
+  .btn-indigo {
+    @apply btn bg-indigo-500 text-white font-semibold;
+  }
+  .btn-indigo:hover {
+    @apply bg-indigo-700;
+  }
+
+  .btn-green {
+    @apply btn bg-green-500 text-white font-semibold;
+  }
+  .btn-green:hover {
+    @apply bg-green-700;
+  }
+
+  .btn-yellow {
+    @apply btn bg-yellow-500 text-white font-semibold;
+  }
+  .btn-yellow:hover {
+    @apply bg-yellow-700;
+  }
+  /* Different Color Buttons */
+
+  /* Inputs */
+
+  .util-input-base {
+    @apply px-4 py-2 border-2;
+  }
+
+  .util-input-base:focus {
+    @apply outline-none;
+  }
+
+  .input {
+    @apply util-input-base util-extra-1;
+  }
+
+  /* Card */
+  .util-card-base {
+    @apply p-2 border-2 rounded-lg shadow-lg;
+  }
+
+  .card {
+    @apply util-card-base ;
+  }
+
+  .card-blue {
+    @apply card text-white border-none bg-blue-500
+  }
+
+  .card-red {
+    @apply card text-white border-none bg-red-500
+  }
+
+  .card-indigo {
+    @apply card text-white border-none bg-indigo-500
+  }
+
+  .card-title {
+    @apply font-semibold text-lg;
+  }
+
+  .card-content {
+    @apply text-base mt-2;
+  }
+  
+
+}
+
+
+@layer utilities {
+
+  .focus-ring:focus {
+    @apply ring-2 ring-blue-400 ring-opacity-75;
+  }
+  .focus-danger:focus {
+    @apply ring-2 ring-red-400 ring-opacity-75;
+  }
+  .focus-warn:focus {
+    @apply ring-2 ring-yellow-400 ring-opacity-75;
+  }
+
+
+
+  .o-border-blue[class] {
+    @apply border-blue-500 !important;
+  }
+  .o-bg-blue[class] {
+    @apply bg-blue-500 !important;
+  }
+  .o-text-blue[class] {
+    @apply text-blue-500 !important;
+  }
+
+
+
+  .o-border-red[class] {
+    @apply border-red-500 !important;
+  }
+  .o-bg-red[class] {
+    @apply bg-red-500 !important;
+  }
+  .o-text-red[class] {
+    @apply text-red-500 !important;
+  }
+
+
+
+  .o-border-yellow[class] {
+    @apply border-yellow-500 !important;
+  }
+  .o-bg-yellow[class] {
+    @apply bg-yellow-500 !important;
+  }
+  .o-text-yellow[class] {
+    @apply text-yellow-500 !important;
+  }
+
+
+
+  .o-border-green[class] {
+    @apply border-green-500 !important;
+  }
+  .o-bg-green[class] {
+    @apply bg-green-500 !important;
+  }
+  .o-text-green[class] {
+    @apply text-green-500 !important;
+  }
+
+}
